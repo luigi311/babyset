@@ -29,7 +29,9 @@ class TestBabySetMethods(unittest.TestCase):
             bset.get(3)
 
     def test_remove(self):
-        pass
+        bset = BabySet([2,4,4])
+        bset.remove(2)
+        self.assertEqual(bset.size(), 1)
 
     def test_clear(self):
     	pass
