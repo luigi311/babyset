@@ -34,7 +34,9 @@ class TestBabySetMethods(unittest.TestCase):
         self.assertEqual(bset.size(), 1)
 
     def test_clear(self):
-    	pass
+    	bset = BabySet([2,4,4])
+        bset.clear()
+        self.assertEqual(bset.size(),1)
 
 if __name__ == '__main__':
     unittest.main()
