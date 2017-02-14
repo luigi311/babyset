@@ -54,7 +54,7 @@ class BabySet:
 	
 	def clear(self):
 		"""Remove all elements from the set."""
-		self.__data = [-1]
+		self.__data = []
 
 	def size(self):
 		"""Returns the size of the set."""

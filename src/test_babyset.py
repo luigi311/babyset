@@ -36,7 +36,7 @@ class TestBabySetMethods(unittest.TestCase):
     def test_clear(self):
     	bset = BabySet([2,4,4])
         bset.clear()
-        self.assertEqual(bset.size(),1)
+        self.assertEqual(bset.size(),0)
 
 if __name__ == '__main__':
     unittest.main()
