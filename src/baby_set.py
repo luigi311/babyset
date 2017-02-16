@@ -38,7 +38,6 @@ class BabySet:
 		"""
 		try:
 			self.__data.remove(elem)
-		
 		except ValueError:
 			raise KeyError
 

@@ -30,8 +30,8 @@ class TestBabySetMethods(unittest.TestCase):
 
     def test_remove(self):
         bset = BabySet([2,4,4])
-        bset.remove(2)
-        self.assertEqual(bset.size(), 1)
+        with self.assertRaises(KeyError):
+            bset.remove(3)
 
     def test_clear(self):
         bset = BabySet([2,4,4])
