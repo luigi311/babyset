@@ -39,8 +39,8 @@ class BabySet:
 		try:
 			self.__data.remove(elem)
 		
-		except Exception as e:
-			print 'problemo here.'
+		except ValueError:
+			raise KeyError
 
 	def get(self, elem):
 		"""Returns element elem from the set. 
